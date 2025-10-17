@@ -1,0 +1,11 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+
+data = pd.read_csv(r"C:\Users\estifo\Downloads\Nat_Gas.csv", index_col=0, parse_dates=True)
+print(data.head())
+
+print(data.describe())
+print(data.plot(figsize=(10, 6)))
